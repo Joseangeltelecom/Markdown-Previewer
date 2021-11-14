@@ -1,0 +1,94 @@
+body {
+ background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 100%);
+  padding: 0;
+  margin: 0;
+}
+
+.app{
+  justify-content: center;
+  width: 100%;
+  height: 84%;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-box{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 90%;
+  margin: auto;
+}
+
+#editor {
+  background-color: rgb(141, 247, 155);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  padding-left: 10px;
+  border: black solid 3px;
+  
+}
+
+.preview-styles{
+  background-color: rgb(141, 247, 155);
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  border: black solid 3px;
+  border-radius: 0.4rem;
+  padding-left: 10px;
+}
+
+#preview img{
+  width: 40%;
+  height: 40%;
+}
+
+h3{
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  font-size: 300%;
+  padding-top: 15px;
+}
+
+.content{
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 531px) {
+  
+  .app{
+    flex-direction: column;
+  }
+
+  .content-box{
+    width: 70%;
+    height: 70%;
+  }
+
+  .title{
+    font-size: 220%;
+  }
+
+}
+
+@media (max-width: 351px){
+  .title{
+    font-size: 180%;
+  }
+
+}
+
+@media (max-width: 320px){
+  .title{
+    font-size: 150%;
+  }
+
+}
